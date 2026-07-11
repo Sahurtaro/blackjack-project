@@ -9,13 +9,13 @@ Deck::Deck() {
 
 void Deck::barajar() { std::cout << "Barajando..." << std::endl; }
 
-Card Deck::repartirCarta() { 
+Card Deck::repartirCarta() {
     Card c = cartas.back();
     cartas.pop_back();
     return c;
 }
 
-int Deck::obtenerTamaño() { return cartas.size(); }
+int Deck::obtenerTamaño() const { return cartas.size(); }
 void Deck::reestablecer() { std::cout << "Reestableciendo..." << std::endl; }
-void Deck::mostrar() { std::cout << "Mostrando mazo..." << std::endl; }
-Card Deck::obtenerSiguiente() { return cartas.back(); }
+void Deck::mostrar() const { std::cout << "Mostrando mazo..." << std::endl; }
+Card Deck::obtenerSiguiente() const { return cartas.back(); }

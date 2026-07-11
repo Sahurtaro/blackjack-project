@@ -1,15 +1,19 @@
 #pragma once
 #include "Card.h"
 #include <vector>
-class Deck{
-    private: std::vector<Card> cartas;
-    public: void barajar();
-    public: Deck();
-    public: Card repartirCarta();
-    public: int obtenerTamaño();
-    public: void reestablecer();
-    public: void mostrar();
-    public: Card obtenerSiguiente();
+
+class Deck {
+private:
+    std::vector<Card> cartas;
+
+public:
+    Deck();
+    void barajar();
+    Card repartirCarta();
+    int obtenerTamaño() const;
+    void reestablecer();
+    void mostrar() const;
+    Card obtenerSiguiente() const;
 };
 
 /*

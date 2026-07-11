@@ -8,4 +8,4 @@ void BlackJack::iniciarJuego() {
 }
 void BlackJack::turnoJugador() { std::cout << "Turno del jugador." << std::endl; }
 void BlackJack::turnoCrupier() { std::cout << "Turno del crupier." << std::endl; }
-void BlackJack::determinarGanador() { std::cout << "Determinando ganador..." << std::endl; }
+void BlackJack::determinarGanador() const { std::cout << "Determinando ganador..." << std::endl; }

@@ -1,14 +1,17 @@
 #pragma once
 #include <string>
 
-class Card{
-    public: Card();
-    public: Card(int v, std::string p);
-    private: int valor;
-    private: std::string palo;
-    public: int obtenerValor();
-    public: std::string obtenerPalo();
-    public: void mostrarInfo();
+class Card {
+private:
+    int valor;
+    std::string palo;
+
+public:
+    Card();
+    Card(int v, std::string p);
+    int obtenerValor() const;
+    std::string obtenerPalo() const;
+    void mostrarInfo() const;
 };
 
 /*
@@ -26,4 +29,3 @@ Colaboraciones:
 - Interactúa con la clase Deck para que esta pueda barajar y repartir las cartas
 
 */
-

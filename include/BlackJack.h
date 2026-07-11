@@ -2,14 +2,18 @@
 #include "Player.h"
 #include "Crupier.h"
 #include "Deck.h"
-class BlackJack{
-    private: Player jugador;
-    private: Crupier crupier;
-    private: Deck mazo;
-    public: void iniciarJuego();
-    public: void turnoJugador();
-    public: void turnoCrupier();
-    public: void determinarGanador();
+
+class BlackJack {
+private:
+    Player jugador;
+    Crupier crupier;
+    Deck mazo;
+
+public:
+    void iniciarJuego();
+    void turnoJugador();
+    void turnoCrupier();
+    void determinarGanador() const;
 };
 
 /*

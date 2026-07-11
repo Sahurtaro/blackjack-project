@@ -1,26 +1,25 @@
 #pragma once
-#include "Hand.h"
-#include "Deck.h"
+#include "Persona.h"
 #include <string>
-class Player{
-    private: std::string nombre;
-    private: Hand mano;
-    public: Player();
-    public: Player(std::string n);
-    public: void pedirCarta(Deck& mazo);
-    public: void plantarse();
+
+class Player : public Persona {
+private:
+    std::string nombre;
+
+public:
+    Player();
+    Player(std::string n);
+    void plantarse();
 };
 
 /*
-Clase: Player
+Clase: Player (hereda de Persona)
 
 Responsabilidades:
 - Almacena el nombre del jugador
-- Almacena la mano del jugador
-- Ejecuta acciones de juego: hit y stand
-- Pedir más cartas cuando lo decida
+- Ejecuta acciones de juego: plantarse
+- Hereda de Persona: mano y pedirCarta()
 
 Colaboraciones:
-- Interactua con la clase Deck para robar una carta cuando decide pedir más
-- Interactua con la clase Hand para agregar la carta recibida a su mano y actualizar el puntaje
+- Hereda de Persona la interacción con Deck y Hand
 */
