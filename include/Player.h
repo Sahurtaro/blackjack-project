@@ -13,13 +13,20 @@ public:
 };
 
 /*
-Clase: Player (hereda de Persona)
+Clase CRC: Player (hereda de Persona)
 
 Responsabilidades:
 - Almacena el nombre del jugador
-- Ejecuta acciones de juego: plantarse
+- Ejecuta la acción de plantarse (finalizar turno)
 - Hereda de Persona: mano y pedirCarta()
 
 Colaboraciones:
-- Hereda de Persona la interacción con Deck y Hand
+- Hereda de Persona la interacción con Deck (repartirCarta) y Hand (agregarCarta, calcularPuntaje, estaBust)
+- Hereda de Persona el atributo mano (protected)
+
+Atributos propios:
+- string nombre — nombre del jugador
+
+Atributos heredados:
+- Hand mano (protected) — mano de cartas
 */

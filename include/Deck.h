@@ -17,19 +17,21 @@ public:
 };
 
 /*
-Clase: Deck
+Clase CRC: Deck
 
 Responsabilidades:
-- Almacena un vector de cartas
-- Baraja las cartas
-- Reparte una carta
-- Obtener el tamaño del juego
-- Reestablecer mazo
-- Mostrar la baraja
-- Obtener la siguiente carta
+- Almacena un mazo de 52 cartas (13 valores x 4 palos)
+- Barajar las cartas aleatoriamente (Fisher-Yates)
+- Repartir la carta superior del mazo
+- Obtener la cantidad de cartas restantes
+- Restablecer el mazo completo con las 52 cartas
+- Mostrar todas las cartas del mazo en consola
+- Ver la carta superior sin repartirla
 
 Colaboraciones:
-- Interactua con la clase Card para repartir cartas a los jugadores y para barajar las cartas
-- Interactua con Crupier para agregar cartas a la mano.
+- Interactúa con la clase Card para crear, almacenar y repartir cartas
+- Interactúa con Persona (y sus derivadas Player y Crupier) al repartir cartas
 
+Atributos:
+- vector<Card> cartas — cartas que componen el mazo
 */

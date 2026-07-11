@@ -7,12 +7,19 @@ public:
 };
 
 /*
-Clase: Crupier (hereda de Persona)
+Clase CRC: Crupier (hereda de Persona)
 
 Responsabilidades:
-- Comienza un juego
+- Inicializa una nueva ronda repartiendo cartas iniciales
 - Hereda de Persona: mano y pedirCarta()
 
 Colaboraciones:
-- Hereda de Persona la interacción con Deck y Hand
+- Hereda de Persona la interacción con Deck (repartirCarta) y Hand (agregarCarta, calcularPuntaje, estaBust, vaciar)
+- Hereda de Persona el atributo mano (protected)
+
+Atributos propios:
+- Ninguno
+
+Atributos heredados:
+- Hand mano (protected) — mano de cartas
 */

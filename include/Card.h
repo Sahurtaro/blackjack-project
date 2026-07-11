@@ -15,17 +15,20 @@ public:
 };
 
 /*
-Clase: Card
+Clase CRC: Card
 
 Responsabilidades:
-- Almacenar el valor de la carta
-- Almacenar la pinta o el palo de la carta
-- Devuelve el valor de la carta
+- Almacenar el valor numérico de la carta (1-13)
+- Almacenar el palo de la carta (Corazones, Picas, Diamantes, Tréboles)
+- Devolver el valor de la carta
 - Obtener el palo de la carta
-- Mostrar la información de la carta
+- Mostrar la información de la carta en consola
 
 Colaboraciones:
-- Interactúa con la clase Hand para que esta pueda conocer el valor y palo de la carta al mostrarla o calcular el puntaje
-- Interactúa con la clase Deck para que esta pueda barajar y repartir las cartas
+- Interactúa con la clase Hand para calcular el puntaje y mostrar la mano
+- Interactúa con la clase Deck para ser almacenada, barajada y repartida
 
+Atributos:
+- int valor — valor numérico de la carta
+- string palo — palo de la carta
 */

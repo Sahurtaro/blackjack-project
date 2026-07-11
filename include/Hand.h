@@ -15,18 +15,19 @@ public:
 };
 
 /*
-Clase: Hand
+Clase CRC: Hand
 
 Responsabilidades:
-- Almacena un vector de cartas
-- Agrega cartas a la mano
-- Calcula el marcador
-- Mostrar mano
-- Indicar si el puntaje supera 21
-- Vaciar la mano
-
+- Almacena un vector de cartas en la mano
+- Agregar cartas a la mano
+- Calcular el puntaje total (con lógica de As: 1 u 11)
+- Mostrar todas las cartas en consola
+- Indicar si el puntaje supera 21 (bust)
+- Vaciar la mano para una nueva ronda
 
 Colaboraciones:
-- Interactua con la clase Card para agregar la carta a la mano y obtener la informacion de cada carta para mostrar la mano
+- Interactúa con la clase Card para agregar cartas, obtener valor y palo, y mostrar cada carta
 
+Atributos:
+- vector<Card> cartas — cartas que componen la mano
 */
